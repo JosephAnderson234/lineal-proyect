@@ -35,18 +35,3 @@ class CubeScene(ThreeDScene):
         
         self.play(Rotate(cube, angle=PI/4, axis=RIGHT))
         self.wait(1)
-
-
-
-        # Trasladar el cubo a lo largo del eje X
-        #self.play(cube.animate.shift(RIGHT * 2))
-        #self.wait(1)
-        
-        
-        # Secuencia de animaciones: rotación y traslación
-        """self.play(Succession(
-            cube.animate.rotate(PI/4, axis=UP),
-            cube.animate.shift(RIGHT * 2),
-            cube.animate.rotate(-PI/4, axis=DOWN)
-        ))
-        self.wait(1)"""

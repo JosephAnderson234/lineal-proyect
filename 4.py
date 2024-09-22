@@ -29,13 +29,9 @@ class RotacionConMatriz(Scene):
         self.play(square_rotated.animate.apply_matrix(matriz_rotacion), run_time=2)
         self.wait(1) 
         
+        # Inversa de la matriz de rotación
         matriz_rotacion_invertida = np.linalg.inv(matriz_rotacion)
         
+        # Rotación inversa
         self.play(square_rotated.animate.apply_matrix(matriz_rotacion_invertida), run_time=2)
         self.wait(1)
-
-        """
-        # Creamos el vector de translación
-        translation_vector = axes.coords_to_point(2, 1) - origin  
-        #punto final - punto inicial
-        """
